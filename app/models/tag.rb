@@ -1,8 +1,8 @@
 class Tag < ApplicationRecord
-    has_many :taggings
-    has_many :articles, through: :taggings, dependent: :destroy
+  has_many :taggings
+  has_many :articles, through: :taggings, dependent: :destroy
 end
 class Tag < ApplicationRecord
-    has_many :taggings
-    has_many :articles, through: :taggings, dependent: :destroy
-end 
+  has_many :taggings
+  has_many :articles, through: :taggings, dependent: :destroy
+end

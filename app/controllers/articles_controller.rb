@@ -1,49 +1,48 @@
 class ArticlesController < ApplicationController
-    include ArticlesHelper
-    
-    def index
-        @articles = Article.all
-    end
+  include ArticlesHelper
 
-    def show
-        @article = Article.find(params[:id])
-        @comment = Comment.new
-        @comment.article_id = @article.id
-    end
+  def index
+    @articles = Article.all
+  end
 
-    def new 
-        @article = Article.new
-    end
+  def show
+    @article = Article.find(params[:id])
+    @comment = Comment.new
+    @comment.article_id = @article.id
+  end
 
-    def create
-        @article = Article.new(article_params)
-        @article.save
+  def new
+    @article = Article.new
+  end
 
-        flash.notice = "Article '#{@article.title}' created!"
+  def create
+    @article = Article.new(article_params)
+    @article.save
 
-        redirect_to article_path(@article)
-    end
+    flash.notice = "Article '#{@article.title}' created!"
 
-    def edit
-        @article = Article.find(params[:id])
-    end
+    redirect_to article_path(@article)
+  end
 
-    def update
-        @article = Article.find(params[:id])
-        @article.update(article_params)
+  def edit
+    @article = Article.find(params[:id])
+  end
 
-        flash.notice = "Article '#{@article.title}' Updated!"
-      
-        redirect_to article_path(@article)
-    end
-      
-    def destroy
-        @article = Article.find(params[:id])
-        @article.destroy
+  def update
+    @article = Article.find(params[:id])
+    @article.update(article_params)
 
-        flash.notice = "Article '#{@article.title}' deleted!"
+    flash.notice = "Article '#{@article.title}' Updated!"
 
-        redirect_to articles_path
-    end
+    redirect_to article_path(@article)
+  end
 
+  def destroy
+    @article = Article.find(params[:id])
+    @article.destroy
+
+    flash.notice = "Article '#{@article.title}' deleted!"
+
+    redirect_to articles_path
+  end
 end
