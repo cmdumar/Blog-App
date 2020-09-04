@@ -3,10 +3,8 @@ $primary_color: #fffccc;
 body {
   background: url('https://source.unsplash.com/4L0-jTzXyfU/1600x900') center center / cover no-repeat fixed;
   background-size: cover;
-  font: {
-    family: Verdana, Helvetica, Arial;
-    size: 14px;
-  }
+  font-family: 'verdana', 'helvetica', 'arial', sans-serif;
+  font-size: 14px;
 }
 
 a {
@@ -19,6 +17,20 @@ a {
   clear: both;
   height: 0;
   overflow: hidden;
+}
+
+.nav-links {
+  margin-top: 20px;
+
+  a {
+    font-size: 16px;
+    background-color: #42607f;
+    padding: 8px 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 3px;
+    text-transform: capitalize;
+  }
 }
 
 .container {
@@ -44,6 +56,7 @@ a {
     font-weight: normal;
     margin-top: 0;
     margin-bottom: 0;
+
     a {
       color: black;
       text-decoration: none;
@@ -52,14 +65,16 @@ a {
 
   ul {
     list-style: none;
+
     li {
-      margin: 30px 0px;
+      margin: 30px 0;
     }
   }
 
   .create-btn {
     display: flex;
     justify-content: center;
+
     button {
       padding: 10px 10px;
       font-size: 20px;
@@ -67,13 +82,17 @@ a {
       border: 1px solid #42607f;
       font-weight: bold;
       border-radius: 4px;
+
       a {
         color: white;
         text-decoration: none;
       }
-      &:hover, &:focus {
+
+      &:hover,
+      &:focus {
         background-color: #fff;
         transition: 0.2s ease-in;
+
         a {
           color: #42607f;
         }
@@ -86,6 +105,7 @@ a {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 15px;
+
   .author-name {
     font-size: 22px;
     font-weight: normal;
@@ -93,24 +113,13 @@ a {
     margin: 0;
     text-transform: capitalize;
   }
+
   .comment-body {
     font-size: 16px;
   }
+
   .date {
     font-size: 11px;
     font-weight: lighter;
-  }
-}
-
-.nav-links {
-  margin-top: 20px;
-  a {
-    font-size: 16px;
-    background-color: #42607f;
-    padding: 8px 10px;
-    text-decoration: none;
-    color: white;
-    border-radius: 3px;
-    text-transform: capitalize;
   }
 }
