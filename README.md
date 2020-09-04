@@ -1,4 +1,5 @@
 # Blog app
+![Linters flag](https://img.shields.io/github/workflow/status/mohammadumar28/Blog-app/Linters)
 
 This is a blog application built with Ruby on Rails. 
 - This app has the features of uploading images as well as posting comments.
