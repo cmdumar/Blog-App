@@ -1,0 +1,125 @@
+$primary_color: #fffccc;
+
+body {
+  background: url('https://source.unsplash.com/4L0-jTzXyfU/1600x900') center center / cover no-repeat fixed;
+  background-size: cover;
+  font-family: 'verdana', 'helvetica', 'arial', sans-serif;
+  font-size: 14px;
+}
+
+a {
+  img {
+    border: none;
+  }
+}
+
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+
+.nav-links {
+  margin-top: 20px;
+
+  a {
+    font-size: 16px;
+    background-color: #42607f;
+    padding: 8px 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 3px;
+    text-transform: capitalize;
+  }
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px 40px;
+  border: none;
+  margin-top: 20px;
+
+  h1 {
+    text-align: center;
+    font-family: serif;
+    font-size: 40px;
+    margin: 0 auto;
+    padding: 10px 5px;
+    background-color: #bdc7d4;
+    font-weight: lighter;
+  }
+
+  .article-title {
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      margin: 30px 0;
+    }
+  }
+
+  .create-btn {
+    display: flex;
+    justify-content: center;
+
+    button {
+      padding: 10px 10px;
+      font-size: 20px;
+      background-color: #42607f;
+      border: 1px solid #42607f;
+      font-weight: bold;
+      border-radius: 4px;
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+      &:hover,
+      &:focus {
+        background-color: #fff;
+        transition: 0.2s ease-in;
+
+        a {
+          color: #42607f;
+        }
+      }
+    }
+  }
+}
+
+.comment {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+
+  .author-name {
+    font-size: 22px;
+    font-weight: normal;
+    font-style: italic;
+    margin: 0;
+    text-transform: capitalize;
+  }
+
+  .comment-body {
+    font-size: 16px;
+  }
+
+  .date {
+    font-size: 11px;
+    font-weight: lighter;
+  }
+}

@@ -1,24 +1,46 @@
-# README
+# Blog app
+![Linters flag](https://img.shields.io/github/workflow/status/mohammadumar28/Blog-app/Linters)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a blog application built with Ruby on Rails. 
+- This app has the features of uploading images as well as posting comments.
 
-Things you may want to cover:
+![screenshot](./public/screenshot-blog.png)
 
-* Ruby version
+## Tools/Languages Used
 
-* System dependencies
+* Ruby on rails
+* Heroku
+* Sass
+* Unsplash source API
 
-* Configuration
+## Blog link
 
-* Database creation
+[Blog app](https://blog-aldu.herokuapp.com/)
 
-* Database initialization
+## Authors
 
-* How to run the test suite
+**Muhammad Umar**
+- Github: [@mohammadumar28](https://github.com/mohammadumar28)
+- LinkedIn: [Mohammad Umar](https://www.linkedin.com/in/mohammadumar28/)
+- Twitter: [@Mohammadumar28](https://twitter.com/Mohammadumar28)
+- Email: [mohammadumar28@gmail.com](mailto:mohammadumar28@gmail.com)
 
-* Services (job queues, cache servers, search engines, etc.)
+**Aldana Longhi**
+- Github: [@AlduLonghi](https://github.com/AlduLonghi)
+- Twitter: [@AbrilLonghi](https://twitter.com/AbrilLonghi)
+- Linkedin: [Aldana Abril Longhi](https://www.linkedin.com/in/aldana-abril-longhi-a842ba1a7/)
+- Email [aldulonghi@gmail.com](mailto:aldulonghi@gmail.com)
 
-* Deployment instructions
+## Acknowledgements
 
-* ...
+* [The Odin project](https://www.theodinproject.com/courses/ruby-on-rails/lessons/ruby-on-rails-ruby-on-rails)
+* [JumpstartLab](http://tutorials.jumpstartlab.com/projects/blogger.html)
+* [Microverse](https://microverse.org)
+
+## Contribution
+
+* Fork this repo.
+* Create your feature branch `git checkout -b my-new-feature`.
+* Commit your changes `git commit -am "Add some feature"`.
+* Push to the branch `git push origin my-new-feature`.
+* Create a new Pull Request.
